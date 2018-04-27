@@ -16,3 +16,8 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::group(['namespace' => 'API', 'as' => 'api.'], function() {
+	Route::post('todos', 'TodoController@store')->name('todos.store');
+});

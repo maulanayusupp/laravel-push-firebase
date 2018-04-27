@@ -35,4 +35,12 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'firebase' => [
+        'api_key' => 'AIzaSyAQPai-fwdeuNhOHYUZrYlor8owx1Pz3Y0',
+        'auth_domain' => 'laravel-push-be647.firebaseapp.com',
+        'database_url' => 'https://laravel-push-be647.firebaseio.com',
+        'secret' => 'laravel-push-be647',
+        'storage_bucket' => 'laravel-push-be647.appspot.com',
+    ],
+
 ];
